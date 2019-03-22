@@ -55,7 +55,7 @@
           <div class="col-md-12">
               <div class="probootstrap-animate d-flex">
                   <h1 class="probootstrap-animate hero-heading">Edworks Creation <br><span class="h1">A Full Service Production Company</span></h1>
-                  <a class="mx-auto btn-hero" href="https://vimeo.com/299137004" target="_blank"><i class="icon-play2"></i></a>
+                  <button id="btn-hero" class="mx-auto btn-hero" type="button"><i class="icon-play2"></i></button>
               </div>
           </div>
         </div>
@@ -272,16 +272,12 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-      // var options = {
-      //   background: true,
-      //   muted: false
-      // };
-
-      // var videoPlayer = new Vimeo.Player('vimeo_player', options);
-
-      // videoPlayer.on('play', function() {
-      //   videoPlayer.api('setVolume', 1);
-      // });
+      $(document).ready(function() {
+        var $btn = $('#btn-hero');
+        $btn.on('click', function() {
+          $('#vimeo_player')[0].requestFullscreen();
+        })
+      });
     </script>
   </body>
 </html>

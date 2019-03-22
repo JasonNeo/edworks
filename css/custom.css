@@ -27,7 +27,7 @@ a:hover{color: #aaa;}
 #vimeo_player{z-index: 1;}
 #hero-content{z-index: 3;}
 .hero-heading{color: #fafafa;font-size: 86px;}
-.btn-hero{font-size: 64px;color: #fafafa;}
+.btn-hero{font-size: 64px;color: #fafafa;background: none;border: none;}
 .btn-hero:hover{color: #aaa;}
 .section-heading{font-size: 64px;font-weight: 700;text-transform: uppercase;text-align: center;color: #0c1520}
 .embed-responsive{box-shadow: 0 20px 48px rgba(22,30,42,0.2);}
