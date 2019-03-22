@@ -48,8 +48,9 @@
     </nav>
     
     <section class="probootstrap-hero" data-section="home" data-stellar-background-ratio="0.5">
-      <div class="shadow-overlay"></div>
-      <iframe id="vimeo_player" src="https://player.vimeo.com/video/299137004?autoplay=1&loop=1&background=1&muted=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <!-- <div class="shadow-overlay"></div> -->
+      <div id="vimeo_player"></div>
+      <!-- <iframe id="vimeo_player" src="" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
       <div id="hero-content" class="container-fluid" style="max-width: 1500px;">
         <div class="row intro-text text-center">
           <div class="col-md-12">
@@ -273,6 +274,20 @@
     <script src="js/custom.js"></script>
     <script>
       $(document).ready(function() {
+
+        var viewW = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var viewH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var options = {
+          url: "https://player.vimeo.com/video/299137004",
+          background: false,
+          autoplay: true,
+          loop: true,
+          height: viewH,
+          width: viewW
+        };
+
+        var videoPlayer = new Vimeo.Player('vimeo_player', options);
+
         var $btn = $('#btn-hero');
         $btn.on('click', function() {
           $('#vimeo_player')[0].requestFullscreen();

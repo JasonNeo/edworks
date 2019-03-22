@@ -11,7 +11,7 @@
 .btn-center{display: block;margin: 0 auto;}
 .text-light{color: #fafafa;}
 .text-grey{color: #73767c;}
-.shadow-overlay{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);z-index: 2;}
+.shadow-overlay{position: absolute;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.5);z-index: 2;}
 
 /* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{font-family: 'Source Sans Pro', serif!important;letter-spacing: 2px;} */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{font-family: 'Lato', serif!important;letter-spacing: 2px;}
@@ -22,10 +22,11 @@ a:hover{color: #aaa;}
 /* .probootstrap-navbar.scrolled.awake{background-color: #0c1520;} */
 /* HERO SECTION */
 /* .probootstrap-hero{background-image: url("../img/hero3.png");background-position: 0px 0px;min-height: 100vh;display: flex;align-items: center;} */
-.probootstrap-hero{min-height: 100vh;display: flex;align-items: center;background-color: #000;}
-.probootstrap-hero::before{background: rgba(0, 0, 0, 0.7)}
-#vimeo_player{z-index: 1;}
-#hero-content{z-index: 3;}
+.probootstrap-hero{background-color: #000;}
+/* .probootstrap-hero::before{background: rgba(0, 0, 0, 0.7)} */
+#vimeo_player{z-index: 1;display: flex;align-items: center;}
+#hero-content{z-index: 3;position: absolute;top: 0;left: 0;min-width: 100%;min-height: 100%;display: flex;justify-content: center;align-items: center;}
+.probootstrap-hero .intro-text{padding-top: 0;}
 .hero-heading{color: #fafafa;font-size: 86px;}
 .btn-hero{font-size: 64px;color: #fafafa;background: none;border: none;}
 .btn-hero:hover{color: #aaa;}
