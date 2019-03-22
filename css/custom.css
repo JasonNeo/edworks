@@ -27,10 +27,16 @@ a:hover{color: #aaa;}
 #vimeo_player{z-index: 1;display: flex;align-items: center;}
 #hero-content{z-index: 3;position: absolute;top: 0;left: 0;min-width: 100%;min-height: 100%;display: flex;justify-content: center;align-items: center;}
 .probootstrap-hero .intro-text{padding-top: 0;}
-.hero-heading{color: #fafafa;font-size: 86px;}
+.hero-heading{color: #fafafa;}
+@media screen and (min-width: 992px){
+    .hero-heading{font-size: 86px;}
+} 
 .btn-hero{font-size: 64px;color: #fafafa;background: none;border: none;}
 .btn-hero:hover{color: #aaa;}
-.section-heading{font-size: 64px;font-weight: 700;text-transform: uppercase;text-align: center;color: #0c1520}
+.section-heading{font-weight: 700;text-transform: uppercase;text-align: center;color: #0c1520}
+@media screen and (min-width: 992px){
+    .section-heading{font-size: 64px;}
+} 
 .embed-responsive{box-shadow: 0 20px 48px rgba(22,30,42,0.2);}
 .specialty-title{position: absolute;right: 50px;bottom: 50px;font-size: 64px;margin-bottom: 0;line-height: 50px;}
 .probootstrap-popular{border: 2px solid #1a57a5;}
